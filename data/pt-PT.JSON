@@ -1,0 +1,180 @@
+{
+  "interface": {
+    "siteTitle": "Numerologia",
+    "labelIdioma": "IDIOMA",
+    "menuHome": "Início",
+    "menuCalcular": "Fazer Mapa",
+    "menuCiclos": "Ciclos & Karma",
+    "menuArtigos": "Artigos",
+    "menuSobre": "Sobre Numerologia",
+    "premiumTitle": "Versão Premium",
+    "premiumDesc": "Relatórios completos + previsões 2026",
+    "upgradeBtn": "Upgrade",
+    "bannerTitle": "Descobre o Teu Destino",
+    "bannerSubtitle": "Através da sabedoria dos números e do karma ancestral",
+    "bannerCta": "Calcular Agora",
+    "formTitle": "Descobre o Teu Mapa Numerológico",
+    "labelNome": "NOME COMPLETO",
+    "labelData": "DATA DE NASCIMENTO",
+    "nomePlaceholder": "Ex: Maria João Silva Santos",
+    "btnSubmit": "Gerar Análise Completa",
+    "resultadosTitle": "O Teu Mapa Numerológico",
+    "btnPdfText": "Gerar PDF do Mapa",
+    "alertData": "Introduza a data de nascimento."
+  },
+  "significados": {
+    "introducoes": {
+      "caminhoVida": "O Caminho de Vida é o número mais importante do teu mapa. Representa o propósito central da tua alma nesta encarnação, as lições principais que vieste aprender e o tipo de energia que vai acompanhar-te ao longo de toda a vida. É calculado a partir da soma total da tua data de nascimento.",
+      "expressao": "O Número de Expressão (ou Destino) revela os teus talentos naturais, a forma como te manifestas no mundo e o propósito externo que vieste cumprir. É calculado a partir do nome completo de registo.",
+      "alma": "O Número da Alma (ou Desejo do Coração) mostra os teus desejos mais profundos, o que realmente te motiva no interior e o que a tua alma anseia. É calculado apenas pelas vogais do nome.",
+      "personalidade": "O Número da Personalidade revela a imagem que os outros percebem de ti à primeira vista, a tua 'máscara' social e a forma como te apresentas ao mundo exterior. É calculado pelas consoantes do nome.",
+      "ausentes": "Os Números Ausentes (ou Lições Kármicas) indicam as energias que estão 'em falta' no teu nome completo. São lições que vieste trabalhar intensamente nesta vida para evoluir.",
+      "karma": "As Dívidas Kármicas aparecem quando há somas intermédias 13, 14, 16 ou 19 (antes da redução final). Representam lições pendentes de vidas passadas que precisam de ser resolvidas agora.",
+      "pinnacles": "Os Pinnacles (Ciclos de Vida) são 4 grandes fases da tua existência. Cada uma traz uma energia dominante que molda oportunidades, lições e desafios. O 1º ciclo dura desde o nascimento até cerca de 36 menos o teu Caminho de Vida. Depois, cada ciclo tem ~9 anos.",
+      "desafios": "Os Desafios acompanham os Pinnacles. São as lições mais difíceis de cada fase. Quanto maior o número, maior a intensidade do desafio (mas também maior o potencial de crescimento).",
+      "anoPessoal": "O Ano Pessoal indica o tema energético dos próximos 12 meses (geralmente do aniversário ao aniversário). Mostra oportunidades, testes e foco principal do ano. Calcula-se somando dia + mês + ano atual."
+    },
+    "caminhoVida": {
+      "1": {
+        "titulo": "Caminho de Vida 1 – O Pioneiro e o Criador Original",
+        "texto": "O número 1 é o arquétipo do início, da independência absoluta e da força criadora pura. Quem tem este caminho veio para ser o 'primeiro', para abrir trilhos onde não havia caminho, para inovar e para liderar pelo exemplo. A tua alma precisa de aprender a confiar na sua visão única, a agir sem esperar aprovação externa e a assumir a responsabilidade total da sua vida. És um ser de grande potencial criativo e de iniciativa poderosa. Quando alinhado, tornas-te pioneiro em áreas novas (negócios, arte, ciência, espiritualidade), inspirando gerações. Quando desalinhado, aparecem egoísmo, autoritarismo, isolamento emocional, impaciência extrema ou medo profundo de falhar e de perder o controlo. A grande lição é: o verdadeiro líder não domina os outros — domina o seu próprio medo e usa o seu poder para criar e elevar, não para controlar."
+      },
+      "2": {
+        "titulo": "Caminho de Vida 2 – O Diplomata, o Mediador e o Parceiro Sensível",
+        "texto": "O número 2 é o caminho da dualidade, da parceria e da harmonia relacional. Quem tem este número veio para aprender a importância do 'nós', para equilibrar opostos e para criar paz onde há conflito. A tua alma é extremamente sensível às energias dos outros, intui necessidades não ditas e tem talento natural para mediar, aconselhar e apoiar. Quando bem vivido, és o amigo leal, o parceiro equilibrado, o diplomata que une pessoas ou o artista que transmite emoção profunda. Quando desequilibrado, surgem indecisão crónica, medo de confronto, dependência emocional, passividade ou absorção excessiva do sofrimento alheio. A lição central é aprender a afirmar as tuas próprias necessidades sem culpa e a transformar a tua enorme empatia em força interior, não em fraqueza."
+      },
+      "3": {
+        "titulo": "Caminho de Vida 3 – O Criativo, o Expressivo e o Portador de Alegria",
+        "texto": "O número 3 é o caminho da expressão criativa, da alegria de viver e da comunicação expansiva. Quem nasce com este número tem uma alma vibrante, otimista e cheia de imaginação. Veio para trazer beleza, leveza e inspiração ao mundo através da palavra falada ou escrita, da arte, do humor ou da presença carismática. Quando alinhado, és o animador de grupos, o artista que toca corações ou a pessoa que transforma qualquer ambiente com a sua energia positiva. Quando desalinhado, aparece dispersão mental, superficialidade, drama emocional desnecessário, dificuldade em focar energia ou tendência a fugir de responsabilidades profundas através da brincadeira constante. A lição maior é canalizar toda essa criatividade exuberante em projetos concretos e significativos, transformando o prazer momentâneo em realização profunda e duradoura."
+      },
+      "4": {
+        "titulo": "Caminho de Vida 4 – O Construtor Disciplinado e o Criador de Bases Sólidas",
+        "texto": "O número 4 é o caminho da estabilidade, da disciplina, do trabalho persistente e da construção duradoura. Quem tem este número veio para criar estruturas sólidas – sejam casas, empresas, famílias, sistemas ou crenças – através de esforço constante, organização e paciência. És prático, leal, confiável e tens uma capacidade rara de transformar ideias em realidades concretas e estáveis. Quando alinhado, constróis legados que duram gerações e tornas-te referência de segurança para os outros. Quando desalinhado, surge rigidez mental, teimosia, medo da mudança, excesso de trabalho ou sensação de estar preso em rotinas que limitam o crescimento. A lição é aprender que a verdadeira estabilidade não é imobilidade, mas a capacidade de adaptar sem perder o centro e a integridade."
+      },
+      "5": {
+        "titulo": "Caminho de Vida 5 – O Aventureiro Livre e o Mestre da Mudança",
+        "texto": "O número 5 é o caminho da liberdade absoluta, da mudança constante, da curiosidade insaciável e da experiência sensorial plena. Quem nasce com este número veio para explorar o mundo em todas as suas dimensões — viajar, comunicar, sentir, adaptar-se e viver intensamente cada momento. És magnético, versátil, cheio de energia vital e tens uma capacidade natural de atrair oportunidades e pessoas. Quando bem vivido, este caminho traz uma vida rica em movimento, aprendizado, conexões humanas e expansão de horizontes. Quando desequilibrado, aparece dispersão, impulsividade, instabilidade emocional ou geográfica, vícios ou medo profundo do compromisso e da rotina. A lição central é transformar a procura incessante por novidade em evolução profunda: encontrar liberdade dentro de compromissos escolhidos conscientemente e viver a aventura com responsabilidade e presença."
+      },
+      "6": {
+        "titulo": "Caminho de Vida 6 – O Cuidador Responsável e o Harmonizador do Amor",
+        "texto": "O número 6 é o caminho do amor incondicional, da responsabilidade afetiva, da harmonia familiar e do serviço dedicado aos outros. Quem tem este número veio para aprender a equilibrar dar e receber, para criar beleza e paz no ambiente à sua volta e para assumir responsabilidades com coração aberto. És compassivo, estético, protetor e tens talento natural para cuidar, ensinar, embelezar ou aconselhar. Quando alinhado, tornas-te o centro amoroso de uma família, comunidade ou projeto, criando ambientes de apoio e cura. Quando desalinhado, surge sacrifício excessivo, perfeccionismo, controlo disfarçado de cuidado, ciúme ou dificuldade em colocar limites saudáveis. A lição maior é: o amor verdadeiro começa pelo amor-próprio e pela capacidade de dizer 'não' sem culpa, preservando a tua própria energia."
+      },
+      "7": {
+        "titulo": "Caminho de Vida 7 – O Buscador Espiritual e o Analista Profundo",
+        "texto": "O número 7 é o caminho da introspecção profunda, da sabedoria interior, da espiritualidade e da busca incessante pela verdade. Quem nasce com este número tem uma alma que precisa de silêncio, solitude e análise para se conectar com o invisível. És investigador nato — seja da mente, do espírito, da ciência ou do mistério da vida. Quando bem vivido, este caminho leva a grandes descobertas internas, a uma sabedoria que beneficia os outros e a uma compreensão profunda da realidade. Quando desalinhado, aparece isolamento emocional, desconfiança excessiva, cinismo, perfeccionismo intelectual ou dificuldade em expressar sentimentos e conectar-se intimamente. A lição é abrir o coração sem perder a mente: partilhar o conhecimento, permitir vulnerabilidade e transformar a solidão em conexão consciente."
+      },
+      "8": {
+        "titulo": "Caminho de Vida 8 – O Mestre do Poder, da Abundância e do Karma Material",
+        "texto": "O número 8 é o caminho do poder pessoal, da autoridade, do sucesso material e do equilíbrio entre o mundo físico e espiritual. Quem tem este número veio para aprender a lidar com dinheiro, influência, karma e o fluxo da abundância. És eficiente, ambicioso, estratégico e tens capacidade de transformar ideias em impérios ou legados concretos. Quando alinhado, crias riqueza para ti e para os outros, lideras com justiça e usas o poder como ferramenta de evolução. Quando desalinhado, surge abuso de poder, materialismo, ganância, rigidez ou medo profundo da perda financeira/status. A lição central é: o verdadeiro poder é serviço, e a abundância real multiplica-se quando é partilhada com ética, generosidade e equilíbrio."
+      },
+      "9": {
+        "titulo": "Caminho de Vida 9 – O Humanitário, o Universal e o Fechador de Ciclos",
+        "texto": "O número 9 é o caminho da compaixão universal, do idealismo, da generosidade e da visão global. Quem nasce com este número veio para fechar ciclos, para servir o coletivo e para compreender a unidade de toda a vida. És visionário, altruísta, caridoso e tens capacidade de sentir o sofrimento do mundo como teu. Quando bem vivido, este caminho gera artistas, ativistas, terapeutas ou líderes que tocam corações e mudam consciências. Quando desalinhado, aparece martírio, drama emocional exagerado, dificuldade em soltar o passado, ressentimento ou dispersão de energia em causas sem foco. A lição maior é aceitar finais como novos começos e servir com desapego, amor incondicional e presença plena."
+      },
+      "11": {
+        "titulo": "Caminho de Vida 11 – O Mestre Inspirador e o Canal de Luz",
+        "texto": "O número 11 é um mestre espiritual que vibra na frequência da intuição elevada, da inspiração e da iluminação. Quem tem este caminho veio para canalizar luz, para inspirar as massas e para elevar a consciência coletiva. És extremamente sensível, carismático e muitas vezes visionário ou profético. Quando alinhado, tornas-te guia espiritual, artista inspirador, líder de transformação ou alguém que desperta consciências. Quando desalinhado, aparece ansiedade, nervosismo, idealismo irrealista, dificuldade em viver no plano material ou sobrecarga energética. A lição é aterrar a visão espiritual no quotidiano: transformar a inspiração em ação prática, cuidar da tua energia e viver o equilíbrio entre céu e terra."
+      },
+      "22": {
+        "titulo": "Caminho de Vida 22 – O Mestre Construtor e o Realizador de Sonhos Coletivos",
+        "texto": "O número 22 é o mestre que une visão espiritual elevada com realização material em grande escala. Quem tem este caminho veio para transformar sonhos coletivos em realidades concretas — construir empresas, instituições, cidades ou sistemas que beneficiem muitos. És prático, disciplinado, estratégico e tens poder executivo enorme. Quando alinhado, crias legados duradouros que mudam gerações. Quando desalinhado, surge pressão extrema, medo do fracasso, rigidez ou esgotamento por tentar fazer tudo sozinho. A lição é construir passo a passo com paciência e confiança no processo divino, delegando e permitindo que outros participem na visão."
+      },
+      "33": {
+        "titulo": "Caminho de Vida 33 – O Mestre Professor e Curador Universal",
+        "texto": "O número 33 é o mestre do amor incondicional, do ensino espiritual e da cura em grande escala. Quem nasce com este número veio para elevar consciências, para ensinar com coração aberto e para servir a humanidade de forma altruísta. És compassivo, curador e tens capacidade de tocar almas profundamente. Quando alinhado, tornas-te professor espiritual, terapeuta de multidões ou líder de movimentos de amor e transformação. Quando desalinhado, aparece sacrifício excessivo, martírio ou dificuldade em colocar limites. A lição maior é incluir-te no amor universal: curar e ensinar sem te anulares, preservando a tua própria luz."
+      }
+    },
+    "karma": {
+      "13": {
+        "titulo": "Dívida Kármica 13/4 – A Lição da Disciplina e do Trabalho Consistente",
+        "texto": "Esta dívida kármica pede-te que aprendas disciplina, perseverança e honestidade no trabalho e nas responsabilidades. Em vidas passadas pode ter havido preguiça, negligência, abandono de projetos ou uso superficial do talento criativo. Nesta vida, o desafio é construir algo sólido através de esforço diário, compromisso real e integridade. Quando superada, transforma-se em enorme capacidade de realização, estabilidade e respeito conquistado pelo trabalho bem feito. O 13/4 ensina que nada de valor se constrói sem suor e consistência."
+      },
+      "14": {
+        "titulo": "Dívida Kármica 14/5 – A Lição do Equilíbrio na Liberdade",
+        "texto": "Esta dívida fala de moderação, equilíbrio e responsabilidade na liberdade. Em vidas passadas pode ter havido excessos (sexual, alimentar, químico, emocional ou geográfico), instabilidade constante ou fuga às consequências das ações. Nesta vida, o desafio é aprender a desfrutar da vida sem autodestruição, a honrar compromissos e a transformar a necessidade de mudança em evolução profunda. Quando superada, traz liberdade consciente, adaptabilidade saudável e uma vida rica em experiências sem caos."
+      },
+      "16": {
+        "titulo": "Dívida Kármica 16/7 – A Lição da Humildade e da Reconstrução Interior",
+        "texto": "Esta dívida pede humildade, quebra do orgulho e reconstrução após perdas. Em vidas passadas pode ter havido abuso de poder intelectual/emocional/espiritual, arrogância ou queda brusca por excesso de confiança. Nesta vida, o desafio é aprender a confiar sem controlar, a reconstruir depois de destruição e a encontrar a verdadeira sabedoria na vulnerabilidade e na entrega. Quando superada, traz uma espiritualidade profunda, autenticidade e capacidade de renascer mais forte."
+      },
+      "19": {
+        "titulo": "Dívida Kármica 19/1 – A Lição da Integridade e do Uso Correto do Poder",
+        "texto": "Esta dívida fala de integridade, responsabilidade individual e uso correto do poder pessoal. Em vidas passadas pode ter havido egoísmo extremo, abuso de autoridade, injustiça ou exploração dos outros. Nesta vida, o desafio é desenvolver independência verdadeira sem egoísmo, aprender a liderar com justiça e a usar o poder para o bem maior. Quando superada, traz liderança ética, autoconfiança genuína e capacidade de inspirar sem manipular."
+      }
+    },
+    "ausentes": {
+      "1": "Ausência do 1: falta de independência, iniciativa e autoconfiança. Lição central: aprender a ser protagonista da própria vida, a tomar decisões sem medo e a liderar com coragem e autenticidade. Trabalha a tua vontade própria e a capacidade de começar coisas novas sem esperar aprovação externa.",
+      "2": "Ausência do 2: dificuldade em parcerias, cooperação e equilíbrio emocional. Lição: desenvolver sensibilidade, paciência, diplomacia e a capacidade de criar harmonia nas relações sem se anular. Trabalha a escuta ativa, a paciência e a afirmação das tuas necessidades sem culpa.",
+      "3": "Ausência do 3: bloqueio na expressão criativa, alegria e comunicação leve. Lição: permitir-se divertir, expressar emoções livremente e usar a criatividade como ferramenta de cura e expansão. Trabalha a espontaneidade, o otimismo e a expressão artística ou verbal sem julgamento.",
+      "4": "Ausência do 4: resistência à estrutura, rotina e estabilidade. Lição: criar bases sólidas, disciplina e paciência para construir algo duradouro e seguro na vida. Trabalha a organização, o planeamento e a aceitação de limites como apoio, não como prisão.",
+      "5": "Ausência do 5: medo da mudança, da liberdade ou da instabilidade. Lição: abraçar a adaptabilidade, viver o presente e transformar a necessidade de novidade em evolução consciente. Trabalha a flexibilidade, a aceitação do imprevisível e a capacidade de fluir sem rigidez.",
+      "6": "Ausência do 6: dificuldade em responsabilidades familiares, amor e serviço. Lição: equilibrar dar e receber, estabelecer limites saudáveis e cuidar sem se sacrificar. Trabalha o amor-próprio, a assertividade no cuidar e a capacidade de dizer 'não' com amor.",
+      "7": "Ausência do 7: bloqueio na introspecção, espiritualidade e confiança na intuição. Lição: aceitar a solitude como fonte de sabedoria e abrir-se à dimensão invisível da vida. Trabalha a meditação, a análise interior e a confiança na tua voz interior.",
+      "8": "Ausência do 8: resistência ao poder, à autoridade e à abundância material. Lição: aprender a gerir recursos (dinheiro, energia, influência) com ética, equilíbrio e generosidade. Trabalha a relação saudável com o dinheiro e o poder, sem medo nem obsessão.",
+      "9": "Ausência do 9: dificuldade em desapego, finais e visão universal. Lição: aceitar ciclos de término como novos inícios e servir o coletivo com desapego e compaixão. Trabalha o deixar ir, a aceitação de perdas e o serviço sem esperar retorno."
+    },
+    "pinnacles": {
+      "introducao": "Os Pinnacles são as 4 grandes fases da tua vida. Cada uma traz uma energia dominante que define oportunidades, lições e desafios desse período. O 1º ciclo dura desde o nascimento até 36 menos o teu número de Caminho de Vida. Depois, cada ciclo tem cerca de 9 anos. O número do Pinnacle indica o tom principal dessa fase.",
+      "1": "Pinnacle 1 – Fase de independência e novos começos. Tempo de plantar sementes, assumir iniciativa e construir identidade própria. Oportunidade para liderar e inovar.",
+      "2": "Pinnacle 2 – Fase de parcerias, cooperação e equilíbrio emocional. Tempo de aprender a relacionar-se, a negociar e a criar harmonia. Oportunidade para crescer através dos outros.",
+      "3": "Pinnacle 3 – Fase de criatividade, expressão e expansão social. Tempo de comunicar, criar e desfrutar da vida. Oportunidade para brilhar e inspirar.",
+      "4": "Pinnacle 4 – Fase de construção, trabalho duro e estabilidade. Tempo de criar bases sólidas e assumir responsabilidades. Oportunidade para construir algo duradouro.",
+      "5": "Pinnacle 5 – Fase de mudança, liberdade e aventura. Tempo de explorar, adaptar-se e viver novas experiências. Oportunidade para crescer através da variedade.",
+      "6": "Pinnacle 6 – Fase de amor, família e responsabilidade. Tempo de cuidar, harmonizar e servir. Oportunidade para criar beleza e equilíbrio no ambiente.",
+      "7": "Pinnacle 7 – Fase de introspecção, espiritualidade e análise. Tempo de estudar, meditar e buscar sabedoria interior. Oportunidade para crescimento profundo.",
+      "8": "Pinnacle 8 – Fase de poder, abundância e autoridade. Tempo de gerir recursos, alcançar sucesso material e assumir liderança. Oportunidade para criar impacto.",
+      "9": "Pinnacle 9 – Fase de conclusão, serviço e visão universal. Tempo de fechar ciclos e servir o coletivo. Oportunidade para deixar legado de compaixão."
+    },
+    "desafios": {
+      "introducao": "Os Desafios acompanham os Pinnacles e representam as lições mais difíceis de cada fase. Quanto maior o número, maior a intensidade do desafio (mas também maior o potencial de evolução). São calculados a partir de diferenças na data de nascimento.",
+      "1": "Desafio 1 – Aprender independência e iniciativa. Resistência ao assumir liderança ou medo de falhar. Lição: confiar na tua vontade e agir sem esperar aprovação.",
+      "2": "Desafio 2 – Aprender cooperação e equilíbrio emocional. Dificuldade em parcerias ou medo de conflito. Lição: afirmar necessidades sem culpa e harmonizar relações.",
+      "3": "Desafio 3 – Aprender expressão criativa e alegria genuína. Dispersão ou medo de ser visto. Lição: comunicar com autenticidade e permitir a diversão.",
+      "4": "Desafio 4 – Aprender disciplina e estabilidade. Resistência à rotina ou medo da limitação. Lição: construir bases sólidas sem rigidez excessiva.",
+      "5": "Desafio 5 – Aprender adaptabilidade e liberdade responsável. Medo da mudança ou instabilidade. Lição: fluir com o imprevisível sem perder o centro.",
+      "6": "Desafio 6 – Aprender responsabilidade amorosa e limites. Sacrifício excessivo ou controlo. Lição: cuidar sem se anular e equilibrar dar/receber.",
+      "7": "Desafio 7 – Aprender confiança na intuição e solitude. Isolamento ou desconfiança. Lição: abrir-se emocionalmente sem perder a profundidade interior.",
+      "8": "Desafio 8 – Aprender gestão ética de poder e abundância. Medo da perda ou abuso. Lição: usar recursos com justiça e generosidade.",
+      "9": "Desafio 9 – Aprender desapego e serviço universal. Dificuldade em soltar ou martírio. Lição: aceitar finais e servir sem esperar retorno."
+    },
+    "anoPessoal": {
+      "introducao": "O Ano Pessoal indica o tema energético dos próximos 12 meses (do aniversário ao aniversário). Mostra oportunidades, testes e foco principal. É calculado somando dia + mês + ano atual.",
+      "1": {
+        "titulo": "Ano Pessoal 1 – Novos Começos e Independência",
+        "texto": "Este é o ano de plantar sementes para o ciclo de 9 anos que começa agora. A energia do 1 traz iniciativa, independência e oportunidades para começar algo novo – carreira, projeto, relação ou estilo de vida. É tempo de tomar as rédeas da tua vida, fazer escolhas corajosas e agir com confiança. Evita hesitações ou dependência excessiva dos outros. O que iniciares agora terá impacto profundo nos próximos anos. A lição é aprender a liderar a tua própria vida com autenticidade e coragem."
+      },
+      "2": {
+        "titulo": "Ano Pessoal 2 – Parcerias, Paciência e Equilíbrio Emocional",
+        "texto": "Um ano mais lento e sensível, focado em relacionamentos, cooperação e equilíbrio emocional. É tempo de ouvir, negociar, construir alianças e desenvolver paciência. As sementes plantadas no ano 1 começam a germinar através de parcerias. Evita conflitos desnecessários e aprende a trabalhar em equipa. A diplomacia, a sensibilidade e a intuição são as tuas melhores aliadas. A lição é aprender a confiar no tempo dos outros e a afirmar as tuas necessidades com suavidade."
+      },
+      "3": {
+        "titulo": "Ano Pessoal 3 – Criatividade, Expressão e Expansão Social",
+        "texto": "Energia alegre, criativa e social. É o ano ideal para expressar-te – escrever, falar em público, criar arte, viajar por prazer, expandir a tua rede de contactos. A tua comunicação fica mais fluida e carismática. Cuidado com a dispersão ou com promessas que não consegues cumprir. Aproveita para divertir-te, deixar que a alegria flua e partilhar a tua luz com o mundo. A lição é canalizar a criatividade em projetos que tenham significado, não só prazer momentâneo."
+      },
+      "4": {
+        "titulo": "Ano Pessoal 4 – Construção, Disciplina e Bases Sólidas",
+        "texto": "Ano de trabalho árduo, organização e construção de bases sólidas. É tempo de estruturar a tua vida – carreira, finanças, saúde, relações – com disciplina e paciência. As sementes dos anos anteriores precisam agora de raízes fortes. Evita a tentação de mudar tudo de repente. A estabilidade e a consistência são as tuas maiores aliadas. A lição é aprender que a verdadeira liberdade vem da estrutura bem construída, não da ausência dela."
+      },
+      "5": {
+        "titulo": "Ano Pessoal 5 – Mudança, Liberdade e Expansão",
+        "texto": "Ano dinâmico, cheio de movimento, viagens, mudanças inesperadas e oportunidades para experimentar. A energia do 5 pede-te que saias da zona de conforto, que explores novas pessoas, lugares, ideias e formas de viver. É excelente para estudar algo novo, mudar de emprego/cidade ou simplesmente viver com mais espontaneidade. Cuidado com impulsividade, decisões precipitadas ou dispersão. A lição é abraçar a mudança como crescimento e encontrar equilíbrio entre aventura e responsabilidade."
+      },
+      "6": {
+        "titulo": "Ano Pessoal 6 – Amor, Família e Responsabilidade",
+        "texto": "Ano de amor, harmonia familiar e responsabilidade afetiva. É tempo de cuidar, de criar beleza no teu ambiente e de assumir compromissos emocionais mais profundos. As relações (família, parceiro, amigos) ganham destaque. Podes sentir maior desejo de casar, ter filhos ou melhorar o teu lar. Cuidado com sacrifício excessivo ou controlo disfarçado de cuidado. A lição é aprender a equilibrar dar e receber, e a cuidar dos outros sem te esqueceres de ti."
+      },
+      "7": {
+        "titulo": "Ano Pessoal 7 – Introspecção, Espiritualidade e Busca Interior",
+        "texto": "Ano de recolhimento, estudo, meditação e busca pela verdade interior. É tempo de analisar a tua vida, de questionar crenças antigas e de aprofundar a conexão espiritual. A solitude é aliada, não inimiga. Evita isolamento excessivo ou cinismo. A lição é transformar o silêncio em sabedoria e abrir o coração sem perder a mente analítica."
+      },
+      "8": {
+        "titulo": "Ano Pessoal 8 – Poder, Abundância e Autoridade",
+        "texto": "Ano de poder pessoal, sucesso material e gestão de recursos. É tempo de colher os frutos do trabalho anterior, de assumir autoridade e de criar abundância (financeira, emocional, energética). Oportunidades de promoção, negócios ou reconhecimento surgem. Cuidado com ganância ou medo da perda. A lição é usar o poder com ética e generosidade — a verdadeira abundância multiplica-se quando partilhada."
+      },
+      "9": {
+        "titulo": "Ano Pessoal 9 – Conclusão, Serviço e Transformação",
+        "texto": "Ano de fecho de ciclos, desapego e serviço ao coletivo. É tempo de soltar o que já não serve (relações, empregos, crenças), de perdoar e de preparar o novo ciclo que começa no próximo ano 1. Oportunidades de ajudar os outros e de deixar legado surgem. Cuidado com martírio ou apego ao passado. A lição é aceitar finais como novos começos e servir com amor e desapego."
+      }
+    }
+  }
+}
