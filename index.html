@@ -67,6 +67,7 @@
 
 <div class="flex h-screen w-full">
 
+  <!-- Sidebar (mantida igual) -->
   <aside class="w-64 bg-sidebar-dark border-r border-white/5 flex flex-col z-30 hidden lg:flex">
     <div class="p-6 flex items-center gap-3 border-b border-white/5">
       <span class="material-symbols-outlined text-primary text-3xl">auto_awesome</span>
@@ -115,8 +116,10 @@
     </div>
   </aside>
 
+  <!-- Área principal -->
   <div class="flex-1 flex flex-col overflow-hidden relative ethereal-gradient">
 
+    <!-- Banner -->
     <header class="h-28 lg:h-32 border-b border-white/5 flex items-center justify-center px-6 lg:px-8 bg-background-dark/60 backdrop-blur-md z-20">
       <div class="w-full max-w-[728px] h-[90px] rounded-xl overflow-hidden relative glass-card flex items-center justify-between px-6 lg:px-8 shadow-inner">
         <div class="flex items-center gap-5">
@@ -137,9 +140,12 @@
       </div>
     </header>
 
+    <!-- Conteúdo principal -->
     <main class="flex-1 overflow-y-auto p-6 lg:p-8 relative">
+
       <div class="max-w-5xl mx-auto space-y-10">
 
+        <!-- Formulário -->
         <section class="glass-card p-8 lg:p-10 rounded-2xl shadow-2xl relative overflow-hidden">
           <div class="absolute top-0 right-0 p-6 opacity-20">
             <span class="material-symbols-outlined text-7xl">psychology</span>
@@ -167,6 +173,7 @@
           </form>
         </section>
 
+        <!-- Resultados -->
         <section id="resultados" class="glass-card p-8 rounded-2xl shadow-2xl hidden">
           <h2 class="text-3xl font-bold mb-8 text-center mystic-glow" data-key="resultadosTitle">O Teu Mapa Numerológico</h2>
           <div id="conteudo-resultados" class="space-y-8"></div>
@@ -184,7 +191,7 @@
 
 <script>
 // =============================================
-// INTERFACE TEXTS
+// TEXTOS DA INTERFACE (hardcoded por agora, como combinado)
 // =============================================
 const interfaceTexts = {
   "pt-PT": {
@@ -281,76 +288,223 @@ const interfaceTexts = {
   }
 };
 
-// Variável global para significados (carregados do JSON)
-let significados = {};
-
-// Carrega o JSON do idioma atual
-async function loadSignificados(lang) {
-  try {
-    const res = await fetch(`data/${lang}.json`);
-    if (!res.ok) throw new Error(`Erro ao carregar data/${lang}.json`);
-    significados = await res.json();
-    console.log(`Significados carregados: ${lang}`);
-  } catch (err) {
-    console.error(err);
-    significados = {};
-  }
-}
-
-// Atualiza todos os textos da interface
-function updateInterface(lang) {
-  const t = interfaceTexts[lang] || interfaceTexts["pt-PT"];
+// =============================================
+// MUDANÇA DE IDIOMA
+// =============================================
+function setLanguage(lang) {
+  if (!interfaceTexts[lang]) lang = "pt-PT";
+  const t = interfaceTexts[lang];
 
   document.querySelectorAll('[data-key]').forEach(el => {
     const key = el.getAttribute('data-key');
     if (t[key]) el.textContent = t[key];
   });
 
-  const nomeInput = document.getElementById('nome-completo');
-  if (nomeInput) nomeInput.placeholder = t.nomePlaceholder || "";
+  document.getElementById('nome-completo').placeholder = t.nomePlaceholder || "";
 
   document.documentElement.lang = lang;
-}
-
-// Muda idioma e recarrega JSON
-async function setLanguage(lang) {
-  if (!interfaceTexts[lang]) lang = "pt-PT";
-
-  updateInterface(lang);
-  await loadSignificados(lang);
   localStorage.setItem('preferredLang', lang);
-
-  // Se resultados estiverem visíveis, re-renderiza
-  if (!document.getElementById('resultados').classList.contains('hidden')) {
-    document.getElementById('form-numerologia').dispatchEvent(new Event('submit'));
-  }
 }
 
-// Inicialização
-document.addEventListener('DOMContentLoaded', async () => {
+// Inicialização da língua
+document.addEventListener('DOMContentLoaded', () => {
   const saved = localStorage.getItem('preferredLang') || "pt-PT";
   document.getElementById('lang-select').value = saved;
-  await setLanguage(saved);
+  setLanguage(saved);
 
-  document.getElementById('lang-select').addEventListener('change', async e => {
-    await setLanguage(e.target.value);
+  document.getElementById('lang-select').addEventListener('change', e => {
+    setLanguage(e.target.value);
   });
 });
 
 // =============================================
-// CÁLCULOS (mantidos)
+// CÁLCULOS PITAGÓRICOS COMPLETOS
 // =============================================
-// (copia aqui o código de cálculos que já tinhas: pitagoras, reduzir, getNumerosNome, etc.)
 
-// No submit, usa significados para descrições
-// Exemplo no render:
-conteudo.innerHTML = `
-  <div class="text-center">
-    <div class="text-7xl font-bold text-primary mystic-glow">${caminho.numero}</div>
-    <h3 class="text-2xl font-bold mt-4">${significados.caminhoVida?.[caminho.numero]?.titulo || "Caminho de Vida " + caminho.numero}</h3>
-    <p class="text-gray-300 mt-3">${significados.caminhoVida?.[caminho.numero]?.positivo || ""}</p>
-  </div>
-`;
+// Tabela pitagórica
+const pitagoras = {
+  'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,
+  'j':1,'k':2,'l':3,'m':4,'n':5,'o':6,'p':7,'q':8,'r':9,
+  's':1,'t':2,'u':3,'v':4,'w':5,'x':6,'y':7,'z':8
+};
+
+// Função de redução (mantém mestres 11,22,33)
+function reduzir(n, allowMasters = true) {
+  while (n > 9 && !(allowMasters && [11,22,33].includes(n))) {
+    n = String(n).split('').reduce((a,b) => a + Number(b), 0);
+  }
+  return n;
+}
+
+// Números do nome (Expressão, Alma, Personalidade, Ausentes)
+function getNumerosNome(nome) {
+  if (!nome) return { expressao: 0, alma: 0, personalidade: 0, ausentes: [] };
+  nome = nome.toLowerCase().replace(/[^a-z]/g, '');
+  let somaTotal = 0, somaVogais = 0, somaConsoantes = 0;
+  const presentes = new Set();
+
+  for (let char of nome) {
+    const val = pitagoras[char];
+    if (!val) continue;
+    somaTotal += val;
+    presentes.add(val);
+    if ('aeiouy'.includes(char)) somaVogais += val; // Y conta como vogal em alguns casos
+    else somaConsoantes += val;
+  }
+
+  const ausentes = [];
+  for (let i = 1; i <= 9; i++) {
+    if (!presentes.has(i)) ausentes.push(i);
+  }
+
+  return {
+    expressao: reduzir(somaTotal),
+    alma: reduzir(somaVogais),
+    personalidade: reduzir(somaConsoantes),
+    ausentes
+  };
+}
+
+// Caminho de Vida + karma
+function getCaminhoVida(dia, mes, ano) {
+  let total = dia + mes + ano;
+  let intermediario = total;
+  let caminho = reduzir(total);
+  let karma = null;
+  if ([13,14,16,19].includes(intermediario)) karma = intermediario;
+  return { numero: caminho, karma };
+}
+
+// Pinnacles e Desafios
+function getCiclos(dia, mes, ano, caminhoVida) {
+  const anoRed = reduzir(ano);
+  const p1 = reduzir(dia + mes);
+  const p2 = reduzir(dia + anoRed);
+  const p3 = reduzir(p1 + p2);
+  const p4 = reduzir(mes + anoRed);
+
+  const d1 = reduzir(Math.abs(dia - mes));
+  const d2 = reduzir(Math.abs(dia - anoRed));
+  const d3 = reduzir(Math.abs(d1 - d2));
+  const d4 = reduzir(Math.abs(mes - anoRed));
+
+  const idadeFimP1 = 36 - caminhoVida.numero;
+
+  return {
+    pinnacles: [
+      { ordem: 1, num: p1, periodo: `0–${idadeFimP1} anos` },
+      { ordem: 2, num: p2, periodo: `${idadeFimP1+1}–${idadeFimP1+9} anos` },
+      { ordem: 3, num: p3, periodo: `${idadeFimP1+10}–${idadeFimP1+18} anos` },
+      { ordem: 4, num: p4, periodo: `${idadeFimP1+19}+ anos` }
+    ],
+    desafios: [
+      { ordem: 1, num: d1 },
+      { ordem: 2, num: d2 },
+      { ordem: 3, num: d3 },
+      { ordem: 4, num: d4 }
+    ]
+  };
+}
+
+// Ano Pessoal atual
+function getAnoPessoal(dia, mes) {
+  const anoAtual = new Date().getFullYear();
+  return reduzir(dia + mes + anoAtual);
+}
+
+// =============================================
+// SUBMIT DO FORM – COMPLETO E FUNCIONAL
+// =============================================
+const form = document.getElementById('form-numerologia');
+const resultadosSec = document.getElementById('resultados');
+const conteudo = document.getElementById('conteudo-resultados');
+const btnPdf = document.getElementById('btn-pdf');
+
+if (form) {
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    console.log("Submit disparado!");
+
+    const nome = document.getElementById('nome-completo').value.trim() || "Não informado";
+    const dataStr = document.getElementById('data-nasc').value;
+
+    if (!dataStr) {
+      alert("Introduza a data de nascimento.");
+      return;
+    }
+
+    const [ano, mes, dia] = dataStr.split('-').map(Number);
+
+    // Cálculos reais
+    const caminho = getCaminhoVida(dia, mes, ano);
+    const nomeNums = getNumerosNome(nome);
+    const ciclos = getCiclos(dia, mes, ano, caminho);
+    const anoPessoal = getAnoPessoal(dia, mes);
+
+    // Renderização completa
+    conteudo.innerHTML = `
+      <div class="text-center mb-10">
+        <div class="text-8xl font-bold text-primary mystic-glow">${caminho.numero}</div>
+        <h3 class="text-3xl font-bold mt-4">Caminho de Vida: ${caminho.numero}${caminho.karma ? ` (Karma ${caminho.karma})` : ''}</h3>
+        <p class="text-xl text-gray-300 mt-4">O teu propósito principal e lições de vida.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="glass-card p-6 rounded-xl text-center">
+          <div class="text-5xl font-bold text-primary">${nomeNums.expressao}</div>
+          <h4 class="text-xl font-bold mt-3">Expressão</h4>
+          <p class="text-sm text-gray-400 mt-2">Talentos e forma de expressão no mundo</p>
+        </div>
+        <div class="glass-card p-6 rounded-xl text-center">
+          <div class="text-5xl font-bold text-primary">${nomeNums.alma}</div>
+          <h4 class="text-xl font-bold mt-3">Alma</h4>
+          <p class="text-sm text-gray-400 mt-2">Desejos profundos do coração</p>
+        </div>
+        <div class="glass-card p-6 rounded-xl text-center">
+          <div class="text-5xl font-bold text-primary">${nomeNums.personalidade}</div>
+          <h4 class="text-xl font-bold mt-3">Personalidade</h4>
+          <p class="text-sm text-gray-400 mt-2">Imagem que os outros percebem</p>
+        </div>
+      </div>
+
+      <div class="glass-card p-6 rounded-xl mb-10">
+        <h4 class="text-2xl font-bold mb-4">Ano Pessoal ${new Date().getFullYear()}: ${anoPessoal}</h4>
+        <p class="text-gray-300">Energia que rege o teu ano atual.</p>
+      </div>
+
+      <div class="glass-card p-6 rounded-xl">
+        <h4 class="text-2xl font-bold mb-6">Ciclos de Vida (Pinnacles)</h4>
+        ${ciclos.pinnacles.map(p => `
+          <div class="mb-4">
+            <strong class="text-lg">${p.ordem}º Pinnacle: ${p.num}</strong>
+            <span class="text-gray-400 ml-4">${p.periodo}</span>
+          </div>
+        `).join('')}
+      </div>
+
+      <p class="text-center mt-10 text-gray-500 italic">Mais detalhes e interpretações completas serão adicionados em breve (com JSON).</p>
+    `;
+
+    resultadosSec.classList.remove('hidden');
+    resultadosSec.scrollIntoView({ behavior: 'smooth' });
+  });
+} else {
+  console.error("Formulário não encontrado!");
+}
+
+// PDF
+btnPdf.addEventListener('click', () => {
+  html2pdf()
+    .from(document.getElementById('resultados'))
+    .set({
+      margin: 1,
+      filename: 'Mapa_Numerologico.pdf',
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+    })
+    .save();
+});
 </script>
 
 </body>
