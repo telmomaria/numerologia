@@ -1,0 +1,105 @@
+{
+  "caminhoVida": {
+    "1": {
+      "titulo": "Natural Leader",
+      "positivo": "Independence, initiative, originality, courage, strong will, pioneering spirit, creativity, self-confidence.",
+      "desafio": "Egoism, authoritarianism, impatience, arrogance, isolation, difficulty working in teams.",
+      "conselho": "Use your power to inspire and serve others, not to dominate. Learn to balance leadership with empathy."
+    },
+    "2": {
+      "titulo": "Diplomat and Partner",
+      "positivo": "Cooperation, sensitivity, diplomacy, patience, harmony, intuition, support for others, emotional balance.",
+      "desafio": "Indecision, emotional dependency, fear of conflict, passivity, hypersensitivity.",
+      "conselho": "Trust your intuition and learn to assert yourself without losing harmony. Partnerships are your greatest growth."
+    },
+    "3": {
+      "titulo": "Creative Communicator",
+      "positivo": "Creativity, expression, joy, optimism, sociability, charisma, imagination, artistic talent.",
+      "desafio": "Scattering, superficiality, emotional drama, difficulty focusing, procrastination.",
+      "conselho": "Channel your creative energy into concrete projects. Genuine joy comes from commitment to what you love."
+    },
+    "4": {
+      "titulo": "Builder and Organizer",
+      "positivo": "Stability, discipline, hard work, organization, loyalty, practicality, patience, solid construction.",
+      "desafio": "Rigidity, stubbornness, fear of change, overwork, mental limitation.",
+      "conselho": "Build strong foundations, but allow flexibility. True security comes from adaptability."
+    },
+    "5": {
+      "titulo": "Adventurer and Free Spirit",
+      "positivo": "Freedom, adaptability, curiosity, versatility, magnetism, love of change, sensuality.",
+      "desafio": "Scattering, impulsiveness, instability, addictions, fear of commitment, irresponsibility.",
+      "conselho": "Balance freedom with responsibility. True adventure includes conscious commitments."
+    },
+    "6": {
+      "titulo": "Caregiver and Responsible",
+      "positivo": "Love, responsibility, family harmony, beauty, service to others, compassion, balance.",
+      "desafio": "Excessive sacrifice, perfectionism, control, jealousy, difficulty saying no.",
+      "conselho": "Care for others without forgetting yourself. True love begins with self-love."
+    },
+    "7": {
+      "titulo": "Spiritual Seeker",
+      "positivo": "Analysis, introspection, wisdom, spirituality, research, intellectual perfectionism, solitude.",
+      "desafio": "Isolation, distrust, cynicism, extreme perfectionism, difficulty expressing emotions.",
+      "conselho": "Share your knowledge and connect emotionally. True wisdom is shared."
+    },
+    "8": {
+      "titulo": "Master of Power and Abundance",
+      "positivo": "Power, authority, material success, ambition, efficiency, positive karma, executive leadership.",
+      "desafio": "Abuse of power, materialism, greed, rigidity, fear of financial loss.",
+      "conselho": "Use power and wealth for the common good. True abundance is shared."
+    },
+    "9": {
+      "titulo": "Humanitarian and Universal",
+      "positivo": "Compassion, idealism, generosity, global vision, completion, charity, universal wisdom.",
+      "desafio": "Martyrdom, emotional drama, difficulty letting go, resentment, energy scattering.",
+      "conselho": "Accept endings as new beginnings. Your service to the world is your greatest legacy."
+    },
+    "11": {
+      "titulo": "Master Inspirer (11/2)",
+      "positivo": "Elevated intuition, inspiration, enlightenment, spiritual vision, charisma, extreme sensitivity.",
+      "desafio": "Nervousness, anxiety, unrealistic idealism, difficulty living in the material plane.",
+      "conselho": "Ground your spiritual vision in daily life. Inspire through practical example."
+    },
+    "22": {
+      "titulo": "Master Builder (22/4)",
+      "positivo": "Elevated practical vision, large-scale construction, material realization of dreams, executive power.",
+      "desafio": "Extreme pressure, fear of failure, rigidity, overload of work.",
+      "conselho": "Build step by step with patience. Your material legacy can change the world."
+    },
+    "33": {
+      "titulo": "Master Teacher (33/6)",
+      "positivo": "Unconditional love, spiritual teaching, healing, large-scale altruistic service, universal compassion.",
+      "desafio": "Excessive sacrifice, martyrdom, difficulty setting boundaries.",
+      "conselho": "Teach and heal without self-nullification. Universal love includes self-love."
+    }
+  },
+  "karma": {
+    "13": {
+      "titulo": "Karmic Debt 13/4",
+      "texto": "Lessons in discipline, hard work, and honesty. In past lives: laziness, negligence, abandonment of responsibilities."
+    },
+    "14": {
+      "titulo": "Karmic Debt 14/5",
+      "texto": "Lessons in moderation and balance between freedom and responsibility. In past lives: excesses, instability, or abuse of freedom."
+    },
+    "16": {
+      "titulo": "Karmic Debt 16/7",
+      "texto": "Lessons in humility and inner reconstruction. In past lives: pride, abuse of intellectual/emotional power, arrogance."
+    },
+    "19": {
+      "titulo": "Karmic Debt 19/1",
+      "texto": "Lessons in integrity and correct use of power. In past lives: extreme selfishness, abuse of authority, injustice."
+    }
+  },
+  "ausentes": {
+    "1": "Lack of independence and initiative. Lesson: develop self-confidence and personal leadership.",
+    "2": "Difficulty in partnerships and emotional sensitivity. Lesson: cooperation, diplomacy, and balance in relationships.",
+    "3": "Difficulty in creative expression and joy. Lesson: communicate with lightness and allow fun.",
+    "4": "Difficulty in organization and stability. Lesson: create routines and solid foundations.",
+    "5": "Difficulty dealing with change and freedom. Lesson: embrace adaptability without fear.",
+    "6": "Difficulty with family responsibilities and love. Lesson: balance giving and receiving.",
+    "7": "Difficulty with introspection and spirituality. Lesson: trust intuition and solitude.",
+    "8": "Difficulty with power, money, and authority. Lesson: manage resources ethically.",
+    "9": "Difficulty with detachment and universal vision. Lesson: accept endings and serve the collective."
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "caminhoVida": {
+    "1": {
+      "titulo": "Líder Nato",
+      "positivo": "Independencia, iniciativa, originalidad, coraje, fuerza de voluntad, pionerismo, creatividad, autoconfianza.",
+      "desafio": "Egoísmo, autoritarismo, impaciencia, arrogancia, aislamiento, dificultad para trabajar en equipo.",
+      "conselho": "Usa tu poder para inspirar y servir a los demás, no para dominar. Aprende a equilibrar liderazgo con empatía."
+    },
+    "2": {
+      "titulo": "Diplomático y Compañero",
+      "positivo": "Cooperación, sensibilidad, diplomacia, paciencia, armonía, intuición, apoyo a los demás, equilibrio emocional.",
+      "desafio": "Indecisión, dependencia emocional, miedo al conflicto, pasividad, hipersensibilidad.",
+      "conselho": "Confía en tu intuición y aprende a afirmarte sin perder la armonía. Las asociaciones son tu mayor crecimiento."
+    },
+    "3": {
+      "titulo": "Creativo y Comunicador",
+      "positivo": "Creatividad, expresión, alegría, optimismo, sociabilidad, carisma, imaginación, talento artístico.",
+      "desafio": "Dispersión, superficialidad, drama emocional, dificultad para concentrarse, procrastinación.",
+      "conselho": "Canaliza tu energía creativa en proyectos concretos. La alegría genuina viene del compromiso con lo que amas."
+    },
+    "4": {
+      "titulo": "Constructor y Organizador",
+      "positivo": "Estabilidad, disciplina, trabajo duro, organización, lealtad, practicidad, paciencia, construcción sólida.",
+      "desafio": "Rigidez, terquedad, miedo al cambio, exceso de trabajo, limitación mental.",
+      "conselho": "Construye bases fuertes, pero permite flexibilidad. La verdadera seguridad viene de la adaptabilidad."
+    },
+    "5": {
+      "titulo": "Aventurero y Libre",
+      "positivo": "Libertad, adaptabilidad, curiosidad, versatilidad, magnetismo, amor por el cambio, sensualidad.",
+      "desafio": "Dispersión, impulsividad, inestabilidad, adicciones, miedo al compromiso, irresponsabilidad.",
+      "conselho": "Equilibra la libertad con responsabilidad. La verdadera aventura incluye compromisos conscientes."
+    },
+    "6": {
+      "titulo": "Cuidador y Responsable",
+      "positivo": "Amor, responsabilidad, armonía familiar, belleza, servicio a los demás, compasión, equilibrio.",
+      "desafio": "Sacrificio excesivo, perfeccionismo, control, celos, dificultad para decir no.",
+      "conselho": "Cuida de los demás sin olvidarte de ti. El amor verdadero comienza por el amor propio."
+    },
+    "7": {
+      "titulo": "Buscador Espiritual",
+      "positivo": "Análisis, introspección, sabiduría, espiritualidad, investigación, perfeccionismo intelectual, soledad.",
+      "desafio": "Aislamiento, desconfianza, cinismo, perfeccionismo extremo, dificultad para expresar emociones.",
+      "conselho": "Comparte tu conocimiento y conéctate emocionalmente. La verdadera sabiduría es compartida."
+    },
+    "8": {
+      "titulo": "Maestro del Poder y Abundancia",
+      "positivo": "Poder, autoridad, éxito material, ambición, eficiencia, karma positivo, liderazgo ejecutivo.",
+      "desafio": "Abuso de poder, materialismo, avaricia, rigidez, miedo a la pérdida financiera.",
+      "conselho": "Usa el poder y la riqueza para el bien común. La verdadera abundancia es compartida."
+    },
+    "9": {
+      "titulo": "Humanitario y Universal",
+      "positivo": "Compasión, idealismo, generosidad, visión global, finalización, caridad, sabiduría universal.",
+      "desafio": "Martirio, drama emocional, dificultad para soltar, resentimiento, dispersión de energía.",
+      "conselho": "Acepta finales como nuevos comienzos. Tu servicio al mundo es tu mayor legado."
+    },
+    "11": {
+      "titulo": "Maestro Inspirador (11/2)",
+      "positivo": "Intuición elevada, inspiración, iluminación, visión espiritual, carisma, sensibilidad extrema.",
+      "desafio": "Nerviosismo, ansiedad, idealismo irreal, dificultad para vivir en el plano material.",
+      "conselho": "Aterriza tu visión espiritual en el día a día. Inspira a través del ejemplo práctico."
+    },
+    "22": {
+      "titulo": "Maestro Constructor (22/4)",
+      "positivo": "Visión práctica elevada, construcción a gran escala, realización material de sueños, poder ejecutivo.",
+      "desafio": "Presión extrema, miedo al fracaso, rigidez, sobrecarga de trabajo.",
+      "conselho": "Construye paso a paso con paciencia. Tu legado material puede cambiar el mundo."
+    },
+    "33": {
+      "titulo": "Maestro Profesor (33/6)",
+      "positivo": "Amor incondicional, enseñanza espiritual, curación, servicio altruista a gran escala, compasión universal.",
+      "desafio": "Sacrificio excesivo, martirio, dificultad para establecer límites.",
+      "conselho": "Enseña y cura sin anularte. El amor universal incluye amor por ti mismo."
+    }
+  },
+  "karma": {
+    "13": {
+      "titulo": "Deuda Kármica 13/4",
+      "texto": "Lecciones de disciplina, trabajo duro y honestidad. En vidas pasadas: pereza, negligencia, abandono de responsabilidades."
+    },
+    "14": {
+      "titulo": "Deuda Kármica 14/5",
+      "texto": "Lecciones de moderación y equilibrio entre libertad y responsabilidad. En vidas pasadas: excesos, inestabilidad o abuso de la libertad."
+    },
+    "16": {
+      "titulo": "Deuda Kármica 16/7",
+      "texto": "Lecciones de humildad y reconstrucción interior. En vidas pasadas: orgullo, abuso de poder intelectual/emocional, arrogancia."
+    },
+    "19": {
+      "titulo": "Deuda Kármica 19/1",
+      "texto": "Lecciones de integridad y uso correcto del poder. En vidas pasadas: egoísmo extremo, abuso de autoridad, injusticia."
+    }
+  },
+  "ausentes": {
+    "1": "Falta de independencia e iniciativa. Lección: desarrollar autoconfianza y liderazgo personal.",
+    "2": "Dificultad en asociaciones y sensibilidad emocional. Lección: cooperación, diplomacia y equilibrio en las relaciones.",
+    "3": "Dificultad en expresión creativa y alegría. Lección: comunicar con ligereza y permitir la diversión.",
+    "4": "Dificultad en organización y estabilidad. Lección: crear rutinas y bases sólidas.",
+    "5": "Dificultad para lidiar con cambio y libertad. Lección: abrazar la adaptabilidad sin miedo.",
+    "6": "Dificultad en responsabilidades familiares y amor. Lección: equilibrar dar y recibir.",
+    "7": "Dificultad en introspección y espiritualidad. Lección: confiar en la intuición y la soledad.",
+    "8": "Dificultad con poder, dinero y autoridad. Lección: gestionar recursos con ética.",
+    "9": "Dificultad en desapego y visión universal. Lección: aceptar finales y servir al colectivo."
+  }
+}
