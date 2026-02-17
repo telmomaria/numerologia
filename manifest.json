@@ -1,0 +1,19 @@
+{
+  "name": "Numerologia Essencial",
+  "short_name": "Numerologia",
+  "icons": [
+    {
+      "src": "img/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#3713ec",
+  "background_color": "#0a0914",
+  "display": "standalone"
+}

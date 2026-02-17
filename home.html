@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Numerologia Essencial - Desktop App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3713ec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#0a0914",
+                        "sidebar-dark": "#131022",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .mystic-glow {
+                text-shadow: 0 0 10px rgba(55, 19, 236, 0.6), 0 0 20px rgba(55, 19, 236, 0.4);
+            }
+            .golden-border {
+                box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.3), 0 0 15px rgba(255, 215, 0, 0.1);
+            }
+            .floating-number {
+                position: absolute;
+                pointer-events: none;
+                opacity: 0.1;
+                font-weight: 700;
+                font-family: 'Space Grotesk', sans-serif;
+            }
+            .ethereal-gradient {
+                background: radial-gradient(circle at top left, rgba(55, 19, 236, 0.15) 0%, transparent 40%),
+                            radial-gradient(circle at bottom right, rgba(147, 51, 234, 0.1) 0%, transparent 40%),
+                            #0a0914;
+            }
+            .glass-card {
+                @apply bg-white/5 border border-white/10 backdrop-blur-md;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark font-display text-white overflow-hidden">
+<div class="flex h-screen w-full">
+<aside class="w-64 bg-sidebar-dark border-r border-white/5 flex flex-col z-30">
+<div class="p-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">auto_awesome</span>
+<h1 class="text-xl font-bold tracking-tight">Numerologia</h1>
+</div>
+<nav class="flex-1 px-4 py-4 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/10 text-primary font-medium border border-primary/20" href="#">
+<span class="material-symbols-outlined">home</span>
+                    Dashboard
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-400 hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined">explore</span>
+                    Mapa Natal
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-400 hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined">star</span>
+                    Símbolos Sagrados
+                </a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-400 hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined">auto_stories</span>
+                    Arquivo
+                </a>
+<div class="pt-4 mt-4 border-t border-white/5">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-400 hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+                        Configurações
+                    </a>
+</div>
+</nav>
+<div class="p-4 mt-auto">
+<div class="p-4 rounded-xl bg-gradient-to-br from-primary/20 to-purple-500/10 border border-white/10">
+<p class="text-xs font-semibold text-primary uppercase tracking-wider mb-2">Versão Premium</p>
+<p class="text-xs text-gray-400 mb-3">Desbloqueie previsões detalhadas para 2025.</p>
+<button class="w-full py-2 bg-white/10 hover:bg-white/20 rounded-lg text-xs font-bold transition-all">Upgrade</button>
+</div>
+<div class="flex items-center gap-3 mt-4 px-2">
+<div class="size-10 rounded-full bg-gradient-to-tr from-primary to-purple-600 flex items-center justify-center font-bold">JD</div>
+<div class="flex-1 overflow-hidden">
+<p class="text-sm font-medium truncate">João Destino</p>
+<p class="text-[10px] text-gray-500 truncate">Premium Member</p>
+</div>
+</div>
+</div>
+</aside>
+<div class="flex-1 flex flex-col overflow-hidden relative ethereal-gradient">
+<header class="h-32 border-b border-white/5 flex items-center justify-center px-8 bg-background-dark/50 backdrop-blur-sm z-20">
+<div class="w-[728px] h-[90px] rounded-lg border border-white/10 relative overflow-hidden flex items-center justify-between px-8 bg-gradient-to-r from-background-dark to-sidebar-dark shadow-inner">
+<div class="flex items-center gap-6">
+<div class="relative">
+<span class="material-symbols-outlined text-4xl text-blue-400 opacity-50">all_inclusive</span>
+<div class="absolute inset-0 bg-blue-500/20 blur-xl rounded-full"></div>
+</div>
+<div>
+<h4 class="text-lg font-bold text-white tracking-tight">Análise Kármica Profunda</h4>
+<p class="text-xs text-gray-400">Descubra as lições das suas vidas passadas.</p>
+</div>
+</div>
+<button class="px-6 py-2 bg-gradient-to-r from-primary to-indigo-600 rounded-full font-bold text-sm golden-border hover:scale-105 transition-transform">
+                        Consultar Agora
+                    </button>
+<div class="absolute top-1 right-4 text-xs font-bold opacity-10">4</div>
+<div class="absolute bottom-1 left-20 text-xs font-bold opacity-10">8</div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-8 relative">
+<div class="floating-number text-9xl top-20 right-20 rotate-12">1</div>
+<div class="floating-number text-8xl bottom-20 left-10 -rotate-12">7</div>
+<div class="floating-number text-7xl top-1/2 right-1/4 opacity-5">9</div>
+<div class="max-w-5xl mx-auto space-y-8">
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<div class="space-y-4">
+<h2 class="text-5xl font-bold leading-tight tracking-tight">O que os <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">números</span> dizem sobre si?</h2>
+<p class="text-lg text-gray-400 font-light max-w-md">
+                                Insira os seus dados para uma análise completa do seu caminho de vida, personalidade e destino.
+                            </p>
+</div>
+<div class="glass-card p-8 rounded-2xl shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-20">
+<span class="material-symbols-outlined text-6xl">psychology</span>
+</div>
+<div class="grid grid-cols-1 gap-6 relative z-10">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-primary">Nome Completo</label>
+<input class="w-full bg-white/5 border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Ex: Maria dos Santos Silva" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-primary">Data de Nascimento</label>
+<input class="w-full bg-white/5 border-white/10 rounded-xl px-4 py-3 text-white focus:border-primary focus:ring-1 focus:ring-primary transition-all" type="date"/>
+</div>
+<button class="w-full bg-primary hover:bg-blue-600 py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 group">
+                                    Calcular Análise
+                                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">rocket_launch</span>
+</button>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pt-12">
+<div class="glass-card p-6 rounded-2xl group hover:bg-white/10 transition-all cursor-pointer">
+<div class="size-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-2xl">filter_1</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Caminho de Vida</h3>
+<p class="text-sm text-gray-400 leading-relaxed">O propósito central da sua existência e as lições principais.</p>
+</div>
+<div class="glass-card p-6 rounded-2xl group hover:bg-white/10 transition-all cursor-pointer">
+<div class="size-12 rounded-xl bg-purple-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-purple-400 text-2xl">favorite</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Desejo da Alma</h3>
+<p class="text-sm text-gray-400 leading-relaxed">O que o seu coração realmente busca e a sua motivação interna.</p>
+</div>
+<div class="glass-card p-6 rounded-2xl group hover:bg-white/10 transition-all cursor-pointer">
+<div class="size-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-blue-400 text-2xl">calendar_month</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Ano Pessoal</h3>
+<p class="text-sm text-gray-400 leading-relaxed">As energias específicas que regem o seu momento atual em 2024.</p>
+</div>
+<div class="glass-card p-6 rounded-2xl group hover:bg-white/10 transition-all cursor-pointer">
+<div class="size-12 rounded-xl bg-amber-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-amber-400 text-2xl">diamond</span>
+</div>
+<h3 class="font-bold text-lg mb-2">Expressão</h3>
+<p class="text-sm text-gray-400 leading-relaxed">Como você se apresenta ao mundo e seus talentos naturais.</p>
+</div>
+</section>
+<section class="relative rounded-3xl overflow-hidden aspect-[21/9] border border-white/5">
+<img alt="Mystical symbolism" class="w-full h-full object-cover grayscale-[0.3] opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy1oI5aewbW21Yc6ctYcaZdDKeIZ0ZaQG9dmzxjUBpiq6wPaYViTcZpYEiDzn6d6gBFfG0GKixq3x9W4optXEHy7zgoquGBfIAsZjImE6cUYZ9JjrL9kh2p3TTcdeNVHJnwnDVJqSgKFXe2Ik2fOv6YkrjurCbkAvUYochPRjgOwJM_OgBlWBWHJJM7-_TAOru1cONouVqttMp8kPslvEL280hI-eihTT0MdymjTzSdHYrrDRLZgoVUjegchtsF_WusrBfSrpK4fBy"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/60 to-transparent flex flex-col justify-center p-12">
+<span class="text-primary font-bold uppercase tracking-[0.4em] text-xs mb-4">Sabedoria Ancestral</span>
+<h3 class="text-4xl font-bold max-w-lg mb-6 leading-tight">Explora a sabedoria dos antigos e os mistérios dos números sagrados</h3>
+<div class="flex gap-4">
+<button class="px-8 py-3 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition-colors">Saiba Mais</button>
+<button class="px-8 py-3 glass-card rounded-xl font-bold hover:bg-white/10 transition-colors">Ver Guia</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

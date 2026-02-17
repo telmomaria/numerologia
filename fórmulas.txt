@@ -1,0 +1,83 @@
+Aqui tens as **fórmulas exatas** para calcular cada item principal da **numerologia pitagórica** (o sistema mais comum e usado em sites simples como o teu). Todas as reduções seguem a regra: soma os dígitos até obter um número de 1 a 9, exceto se aparecer **11**, **22** ou **33** (números mestres – mantém-se sem reduzir mais, a menos que a interpretação exija). 
+
+Usa sempre o **nome completo de registo** (como consta na certidão de nascimento) e a **data de nascimento** (dia/mês/ano gregoriano).
+
+### Tabela Pitagórica (valores das letras)
+A=1, B=2, C=3, D=4, E=5, F=6, G=7, H=8, I=9  
+J=1, K=2, L=3, M=4, N=5, O=6, P=7, Q=8, R=9  
+S=1, T=2, U=3, V=4, W=5, X=6, Y=7, Z=8  
+
+### 1. Caminho de Vida / Plano de Vida (Life Path Number) – o mais importante
+**Fórmula:** Soma todos os dígitos da data de nascimento (dia + mês + ano) → reduz a 1-9 ou mestre.  
+Exemplo: 15/07/1990  
+Dia: 1+5=6  
+Mês: 0+7=7  
+Ano: 1+9+9+0=19 → 1+9=10 → 1+0=1  
+Total: 6 + 7 + 1 = 14 → 1+4= **5**  
+Ou soma direta: 1+5+0+7+1+9+9+0=32 → 3+2=5  
+
+**Nota:** Se a soma intermédia passar por 13, 14, 16 ou 19 antes da redução final → dívida kármica (ex.: 13→4, mas com karma 13).
+
+### 2. Número de Expressão / Destino (Expression / Destiny Number)
+**Fórmula:** Soma os valores de **todas as letras** do nome completo → reduz.  
+Exemplo: Maria João Silva Santos  
+Converte cada letra → soma tudo → reduz a 1-9/11/22/33.
+
+### 3. Número da Alma / Motivação / Desejo do Coração (Soul Urge / Heart's Desire)
+**Fórmula:** Soma apenas as **vogais** (A, E, I, O, U; Y conta como vogal se soar como vogal, ex.: em "Lynn" o Y=7).  
+Ignora consoantes. Reduz o total.
+
+### 4. Número da Personalidade / Impressão (Personality Number)
+**Fórmula:** Soma apenas as **consoantes** do nome completo.  
+Reduz o total.
+
+### 5. Análise Detalhada do Nome (opcional, mas útil para o teu site)
+- **Primeiro Nome:** Soma só as letras do primeiro nome → reduz (personalidade individual).  
+- **Apelido(s):** Soma só o(s) apelido(s) → reduz (herança familiar, karma coletivo).  
+- **Nome Completo:** Já é o Número de Expressão.
+
+### 6. Dívidas Kármicas (Karmic Debt)
+**Fórmula:** Aparecem se, durante qualquer redução (especialmente no Caminho de Vida ou Expressão), a soma intermédia for **13, 14, 16 ou 19** (antes da redução final para 4, 5, 7 ou 1).  
+- 13/4 → karma de preguiça / falta de disciplina  
+- 14/5 → karma de excessos / instabilidade  
+- 16/7 → karma de orgulho / abuso de poder  
+- 19/1 → karma de egoísmo / abuso de autoridade  
+
+Também pode vir do dia de nascimento isolado (ex.: nascido a 16 → karma 16).
+
+### 7. Números Ausentes / Lições Kármicas (Missing Numbers)
+**Fórmula:** No nome completo, converte todas as letras → vê quais números de 1 a 9 **não aparecem** (ausentes).  
+Cada ausente é uma lição a trabalhar nesta vida (ex.: sem 2 → dificuldade com parcerias; sem 8 → lições com dinheiro/poder).
+
+### 8. Ciclos de Vida / Pinnacles (Períodos Principais)
+**Fórmula (4 Pinnacles):**
+- **1.º Pinnacle:** Dia + Mês → reduz (dura desde nascimento até 36 - Caminho de Vida).  
+- **2.º Pinnacle:** Dia + Ano reduzido → reduz (dura ~9 anos após o 1.º).  
+- **3.º Pinnacle:** 1.º + 2.º Pinnacle → reduz (dura ~9 anos).  
+- **4.º Pinnacle:** Mês + Ano reduzido → reduz (dura o resto da vida).  
+
+Idades aproximadas:  
+- Fim do 1.º: 36 - Caminho de Vida (ex.: se Caminho 7 → fim aos 29 anos).  
+- Depois: cada ciclo dura 9 anos (ajusta ligeiramente se mestre).
+
+### 9. Desafios / Challenges (alinhados aos Pinnacles)
+**Fórmula (4 Desafios):**
+- **1.º Desafio:** |Dia - Mês| → reduz (ou o maior menos o menor).  
+- **2.º Desafio:** |Dia - Ano reduzido| → reduz.  
+- **3.º Desafio:** |1.º Desafio - 2.º Desafio| → reduz.  
+- **4.º Desafio:** |Mês - Ano reduzido| → reduz.  
+
+Cada desafio corresponde ao Pinnacle da mesma posição.
+
+### 10. Ano Pessoal (Personal Year)
+**Fórmula:** Dia + Mês + Ano atual → reduz a 1-9 (ciclo anual, muda a 1 de janeiro ou no aniversário, dependendo da tradição – mais comum no aniversário).  
+Exemplo: Para 2026, com nascimento 15/07: 1+5 + 0+7 + 2+0+2+6 = 23 → 2+3=5 (Ano Pessoal 5 em 2026).  
+
+Podes gerar uma tabela de anos pessoais desde o nascimento até +100 anos somando o ano desejado.
+
+### Dicas para Implementação no Teu Site (em JS)
+- Função de redução: `function reduzir(num) { while (num > 9 && num !== 11 && num !== 22 && num !== 33) { num = String(num).split('').reduce((a,b)=>a+parseInt(b),0); } return num; }`
+- Para karma: Verifica se soma intermédia === 13/14/16/19 antes da redução final.
+- Vogais: Array ['a','e','i','o','u','y'] (minúsculas).
+
+Estas fórmulas cobrem o essencial da numerologia pitagórica para um site completo. Se quiseres exemplos com uma data/nome específica para testar, ou código JS pronto para um desses cálculos, avisa!
